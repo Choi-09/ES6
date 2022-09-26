@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- 스타일시트 적용하기 -->
     <link rel = "stylesheet" href = "./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
     <title>JS PWA</title>
-    <!-- 자바스크립트 -->
+    <!-- 내부 자바스크립트 -->
     <!-- 위치1. head
     <script>
         
@@ -15,6 +18,8 @@
         // console.log("Hello, World!"); :콘솔은 이용자들에게 보이지 않는다.
     </script>
     -->
+    <!-- 외부 자바스크립트 -->
+    <script src="./scripts/index.js"></script>
 </head>
 
 <body>
@@ -26,14 +31,25 @@
                 </h1>
             </div>
         </header>
- 
+        <!-- 위치2. body : 여기도 가능
+        <script>
+            alert("Hello, World!");
+            //console.log("Hello, World!");
+        </script>
+        -->
         <!-- main#content + 엔터 -->
         <main id = "content">
             <section id="bt">
-                <button class="bt1">버튼1</button>
-
+                <button class="bt1" onclick="funPrint();">버튼1</button>
+                <button class="bt2" onclick="funPrint();">버튼2</button>
             </section>
         </main>
+          <!-- 위치3. body : 여기도 가능
+        <script>
+            alert("Hello, World!");
+            //console.log("Hello, World!");
+        </script>
+        -->
     </div>
 </body>
 
