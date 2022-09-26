@@ -10,3 +10,4 @@
 
 ### ES6+
 + ★화살표 함수★ : const funPrint = (n) => {console.log(`버튼${n}`);}
++ 백틱->버튼${n}
