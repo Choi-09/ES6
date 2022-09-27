@@ -57,22 +57,54 @@ document.addEventListener("DOMContentLoaded", () => {
      > 결과4: NodeList >> 값 전체를 가져온다
 */
     const bts4 = document.querySelectorAll(".bt1");
-    console.log(bts4);
-
-    /* 반복문-노가다(?)
+    // console.log(bts4);
+ 
+    // js 반복문- 노가다(?)
+    /*
     console.log(bts4[0].innerHTML);
     console.log(bts4[0].innerText);
     console.log(bts4[1].innerContent);
     */
 
-    //결과 NodeList를 반복해서 가져오기
+    // for 반복문
+    /*
+    > 결과 NodeList를 반복해서 가져오기
     for(let i = 0; i <bts4.length ; i++) {
         console.log(typeof(bts4[i]));
         // innerHTML로 요소 내 이름 바꾸기
-        bts4[i].innerHTML = `mybutton${i+1}`
-        console.log(bts4[i].innerHTML);
+        // bts4[i].innerHTML = `mybutton${i+1}`
+        // console.log(bts4[i].innerHTML);
     }
+    */
+
+    // for in 반복문 : key 값만 가져온다
+    /*
+    for(let i in bts4) {
+        console.log(i)
+    }
+    */
+   
+    // for each 반복문 : 메소드 형식이라 중간에 종료할 수 없음, idx가 item 뒤에 온다
+    /*
+    bts4.forEach((item) => {
+        console.log(item.innerHTML)
+    });
+    bts4.forEach((item, idx) => {
+        console.log(`${idx} : ${item.innerHTML}`);
+    });
+    */
+
+    // for of 반복문 : (파이썬의 for in구문과 유사)  idx가 item 앞에 온다
+    /*
+    for(let item of bts4){
+        console.log(item.innerHTML);
+    }
+    for(let [idx, item] of bts4.entries()){
+        console.log(`${idx} : ${item.innerHTML}`);
+        break;
+    }
+    */
 });
-// `` : 백틱(1옆에)
+
 
 
