@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(bts4[1].innerContent);
     */
     // // 결과 NodeList를 반복으로 가져오기
-    // for(let i = 0; i <bts4.length ; i++) {
-    //     console.log(i);
-    // }
+    for(let i = 0; i <bts4.length ; i++) {
+        console.log(i);
+    }
 });
 // `` : 백틱(1옆에)
 
