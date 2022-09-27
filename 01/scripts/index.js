@@ -18,10 +18,10 @@ $document.ready(){
 }
 */
 // document.addEventListener("DOMContentLoaded", 콜백함수)
-// 이벤트리스너 추가하는데 (해당 이벤트가 발생할때, 익명함수 () =>{} 를 실행한다)
+// document에 이벤트리스너 추가하는데 (DOM이 다 만들어지면, 익명함수 () =>{} 를 실행한다)
 document.addEventListener("DOMContentLoaded", () => {
 //console.log("DOM test")
-// index.html 코드에 짜져있는 bt 을 id(section에 지정)인 값으로 선택하여 HTML으로? 가져와라
+// DOM에 짜져있는 bt 을 (id)로 찾고 선택하여 -> (아래처럼) 요소를 생성 or 갖고와서 보여주기
     console.log(document.getElementById("bt").innerHTML);
 
     /*요소 생성*/
@@ -35,11 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const bts2 = document.getElementsByTagName("button");
     console.log(bts2);
     
-    // 결과: Node
+    // 결과: Node >> 처음 만나는 값을 1개만 가져온다
     const bts3 = document.querySelector(".bt1");
     console.log(bts3);
 
-    // 결과: NodeList
+    // 결과: NodeList >> 값 전체를 가져온다
     const bts4 = document.querySelectorAll('button');
     console.log(bts4);
 });
