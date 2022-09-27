@@ -12,3 +12,6 @@
 + ★화살표 함수★ : const funPrint = (n) => {console.log(`버튼${n}`);}
     + 버튼${n}: 백틱사용 (1옆에.작은따옴표 아님.)
 
++ JS에서 변수는 var, let, const 3가지 였으나 es6+부터 var는 사용하지 않음
+    + 함수는 const
+    + 변수는 변하면 const, 안변하면 let
