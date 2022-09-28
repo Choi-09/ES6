@@ -25,8 +25,8 @@
     -->
 
     <!-- 외부 js -->
-    <script src="./scripts/index.js"></script>
-    
+    <!-- <script src="./scripts/index.js"></script> -->
+    <script src="./scripts/dom.js"></script>
 
 
 </head>
@@ -48,9 +48,10 @@
         -->
         <!-- main#content + 엔터 -->
         <main id = "content">
+            <section id = "msg"></section>
             <section id="bt">
-                <button class="bt1" onclick="funPrint(1);"><span>버튼1</span></button>
-                <button class="bt1" onclick="funPrint(2);"><span>버튼2</span></button>
+                <button class="bt1" onclick="show();">확인</button>
+                <!-- <button class="bt1" onclick="funPrint(2);"><span>버튼2</span></button> -->
             </section>
         </main>
           <!-- 위치3. body : 여기도 가능
