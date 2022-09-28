@@ -32,6 +32,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 main > section {
@@ -40,8 +41,10 @@ main > section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2vh;
+    margin: 5vh;
+
 }
+
 
 .divMsg{
     display: inline-block;
