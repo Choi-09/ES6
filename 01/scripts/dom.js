@@ -30,19 +30,29 @@ const show = () => {
 //  태그만들기
     /* msg 영역에 div 3개를 생성*/
     // 1. 태그 만들기
-    let tag = ""; // ① 변수선언(공백처리)
-    for (let i = 1; i <= 3; i++) {  //② 반복문   
-        // tag = tag + '<div class = "divMsg">' + i + '</div>' ;      
-       tag = tag + `<div class = "divMsg">${i}</div>`; //③ 함수 백틱주의
+    // let tag = ""; // ① 변수선언(공백처리)
+    // for (let i = 1; i <= 3; i++) {  //② 반복문   
+    //     // tag = tag + '<div class = "divMsg">' + i + '</div>' ;      
+    //    tag = tag + `<div class = "divMsg">${i}</div>`; //③ 함수 백틱주의
+    // }
+    // console.log(tag);
+    let tag = "";
+    /*
+    for (let i = 1; i <=6; i++) {
+        tag = tag + `<div class = "divMsg"><img src = "./images/${i}.png"></div>`; //이미지 경로 오류
     }
+    */
+   let i = Math.floor(Math.random() * 6)+1;
+    tag = tag + `<div class = "divMsg"><img src = "./images/${i}.png" id="msgImgId"></div>`; //이미지 경로 오류
     console.log(tag);
-
     // 2. DOM에서 태그를 넣을 요소 선택
-    const msgDiv = document.querySelector(`#msg`)
-    
+    // document.querySelector(`#msg).innerHTML = tag;
+    // const msgDiv = document.querySelector(`#msg`)
+    const msgDiv = document.querySelector('.msg'); //백틱, 작은따옴표 구분
     // 3. 선택된 요소의 HTML 변경 
-    msgDiv.innerHTML = tag ;
-/* 
+    // msgDiv.innerHTML = tag ;
+    msgDiv.innerHTML = tag;
+/*  
 >> 화살표함수 축약 : 함수 내 명령이 하나일 때 {} 생략가능
                     만약 return문 하나이면 return도 생략가능
 const show = () => console.log("show 화살표함수");
