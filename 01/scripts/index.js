@@ -16,7 +16,6 @@ const funPrint = (n) => {
  }
  */
 
-
  // 변수
 /*
  // console.log(x);
@@ -34,7 +33,7 @@ $document.ready(){ }
 document.addEventListener("DOMContentLoaded", () => {
 // console.log("DOM test") });
 /*
-// DOM에 짜져있는 bt 을 (id)로 찾고 선택하여 -> (아래처럼) 요소를 생성 or 갖고와서 보여주기
+// DOM에 짜져있는 bt을 (id)로 찾고 선택하여 -> (아래처럼) 요소를 생성 or 갖고와서 보여주기
     console.log(document.getElementById("bt").innerHTML);
 
     //요소 생성//
