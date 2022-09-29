@@ -13,8 +13,9 @@ function show() {
 */
 
 const show = () => {
-    const formDiv = document.querySelector('#formDiv');
-    formDiv.style.display = 'none';
+
+    // const formDiv = document.querySelector('#formDiv');
+    // formDiv.style.display = 'block';
 
     // console.log("show 화살표함수");
     
@@ -65,16 +66,12 @@ const show = () => console.log("show 화살표함수");
 */
     // 3-1. 스타일 변경
     msgDiv.style.backgroundColor = "lightgray"; /*: 주사위 배경 설정*/ 
-    msgImg.style.Width = "50vw";
+    // msgImg.style.Width = "50vw";
     // msgImg.style.maxWidth = "100px";
-    // msgImg.style.maxHeight = "100px";
-
-   
+    // msgImg.style.maxHeight = "100px";  
 }
 
 document.addEventListener("DOMContentLoaded", () => {   
-    const formDiv = document.querySelector('#formDiv');
-    formDiv.style.display = 'block';
-
-    
+    // const formDiv = document.querySelector('#formDiv');
+    // formDiv.style.display = 'none';    
 });

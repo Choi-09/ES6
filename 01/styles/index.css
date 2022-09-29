@@ -4,16 +4,22 @@
     margin : 0px;
     padding: 0px;
 }
+#root {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 
 header {
     /* vh: 화면 높이에 비례 */
     /* vw: 화면 폭에 비례 */
     width:100%;
     height: 10vh;
-    background-color: #426439;
+    background-color: #5B6D5B;
     color: white;
     text-align:center;
-    /*flex */
+    /*flex : header "자바스크립트" 정렬*/
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -22,50 +28,113 @@ header {
     top : 0;
     position:sticky;
     font-family: 'Sunflower', sans-serif;
-
 }
 
 main {
     width: 100%;
     height: 90vh;
+      /* section 가운데 정렬 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}   
+
+main div {
+    height: 10%;
+    /* h2 "주사위게임 가운데정렬 */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    color: black;
 }
 
-main > section {
+#diceSection {
+    text-align: center;
+    margin: 20px;
     display: flex;
-    /* 버튼 세로 정렬 */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5vh;
-
+    height: 25%;
+    /* display: none; */
 }
 
-
-.divMsg{
+.diceImg{
     display: inline-block;
-    margin: 1vh;
-
 }
-.divMsg:hover, #divMsg:active{
-    background-color: #FCF8E8;
-    color : #CEE5D0;
+
+/* .divMsg:hover, #divMsg:active{
+    background-color: #F6E6E4;
+    color : #CA8A8B;
+} */
+
+#formSection {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* display: none; */
+}
+
+/* radio */
+/* labels for checked inputs */
+/* radio element, when checked */
+input[tytpe = "radio"] {
+    display: none;
+}
+
+input[type="radio"] + label{
+    display: inline-block;
+    padding: 8px 10px;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[tytpe="radio"]:checked + label {
+    background-color: #E2BCB7;
+    color: #ffffff;
+}
+
+fieldset {
+    padding: 5vw, 2vw;
+    width: 60vw;
+    height: 12vw;
+    font-size: 4vw;
+    border: 1px solid #dfdfdf;
+}
+
+#resultSection {
+    height : 10%;
+    display: flex;
+    /* display: none;  */
+}
+
+#buttonSection {
+    height: 20vh;
+    display:  flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
 }
 /* button은 인라인태그. 각각 효과를 넣으려면 
    인라인>블록형 태그로 바꿔서 적용 */
 button{
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
     width: 100%;
     margin: 1vh;
     width: 50vw;
     max-width: 200px;
     height:30vh;
     max-height: 50px;
-    background-color: #CEE5D0;
+    background-color: #CA8A8B;
     border: none;
     color: white;
     border-radius: 10px;
@@ -73,6 +142,11 @@ button{
     }
 
 button:hover, button:active {
-    background-color: #FCF8E8;
-    color : #CEE5D0;
+    background-color: #F6E6E4;
+    color : #CA8A8B;
     }
+
+.bt2 {
+    display:flex;
+    /* display: none; */
+}

@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     */
 
-    // for of 반복문 : (파이썬의 for in구문과 유사)  idx가 item 앞에 온다
+    // for of 반복문 : (파이썬의 for in구문과 유사)  idx가 item 앞에 온다. break걸때
     /*
     for(let item of bts4){
         console.log(item.innerHTML);
