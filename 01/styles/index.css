@@ -4,9 +4,10 @@
     margin : 0px;
     padding: 0px;
 }
+
 #root {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -21,7 +22,6 @@ header {
     text-align:center;
     /*flex : header "자바스크립트" 정렬*/
     display: flex;
-    flex-direction:column;
     justify-content: center;
     align-items: center;
     /* top, position: 고정 */
@@ -37,7 +37,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center; 
+    color: white; 
 }   
 
 main div {
@@ -96,7 +97,7 @@ input[type="radio"] + label{
 
 input[tytpe="radio"]:checked + label {
     background-color: #E2BCB7;
-    color: #ffffff;
+    color: white;
 }
 
 fieldset {
@@ -124,29 +125,19 @@ fieldset {
    인라인>블록형 태그로 바꿔서 적용 */
 button{
     /* display: inline-block; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    width: 100%;
     margin: 1vh;
     width: 50vw;
-    max-width: 200px;
-    height:30vh;
-    max-height: 50px;
-    background-color: #CA8A8B;
     border: none;
+    border-radius: 8px;
+    background-color: #CA8A8B;
     color: white;
-    border-radius: 10px;
-    font-size: 1rem;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer;
     }
 
 button:hover, button:active {
     background-color: #F6E6E4;
     color : #CA8A8B;
     }
-
-.bt2 {
-    display:flex;
-    /* display: none; */
-}
