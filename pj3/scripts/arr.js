@@ -1,41 +1,78 @@
 /* 배열 선언 */
- 
+// 비추: let arr = new Array() ;
+// let arr = [];
+// console.log(arr);
 
 /* 배열 추가 삭제 :뒤에서 */
- 
+// arr.push('💖');
+// arr.push('😊');
+// console.log(arr);
+
+// arr.pop();
+// console.log(arr);
+
 /* 배열 추가 삭제 :앞에서 */
-  
+
 
 /* 배열 순회 */
- 
-/* 배열의 length 속성*/
- 
+// arr = ['🍕','🍔','🍗','🍜',] ;
+// // for(let i = 0; i <arr.length; i++){
+// //     console.log(arr[i]);
+// // }
+// for(let item of arr) {
+//     console.log(item);
+// }
+// /* 배열의 length 속성*/
+// //배열 비우기
+// arr.length = 2;
+// console.log(arr); 
 
-//배열 비우기
- 
+// arr =[];
+// console.log(arr);
 
-/* 배열을 문자열로 반환*/
-arr = ['🍕','🍔','🍗','🍜',] ;
- 
-/* 문자열 split하면 배열반환*/
- 
+// /* 배열을 문자열로 반환*/
+// arr = ['🍕','🍔','🍗','🍜',] ; // 마지막 쉼표가 JS에서는 오류 발생하지 않는다.
+// let arrs =  String(arr) ;
+// console.log(arrs);
+
+// /* 문자열 split하면 배열반환*/
+// arr2 = arrs.split(',');
+// console.log(arr2);
+
 /* 배열 정렬 */
 let num = [1,3,5,2,4];
+num.sort() ;
+console.log(num);
  
 
 /* 배열 섞기*/
  
- 
 
 /* filter : 주어진 함수의 조건을 만족하는 요소를 모아 새로운 배열로 반환*/
 //3보다 큰수 집합 
+let nf = num.filter((x) => x > 3);
+console.log(nf);
+
 
 /* 실습 : 합집합, 교집합, 차집합 */
 let setA = [1,2,3,4,5];
 let setB = [4,5,6,7,8];
 
+// 얕은 복사 : 주소값 복사
+let setC = setA ;
+console.log(`setC => ${setC}`);
+setA[0] = 100;
+console.log(`setC => ${setC}`);
+
+// 깊은 복사: 원본은 두고 복사본 생성
+setA[0] = 1;
+let setD = [...setA] ;
+console.log(`setD => ${setD}`);
+setA[0] = 100;
+console.log(`setD => ${setD}`);
+
 //합집합
-let union =  
+let union =  [...setA, ...setB]
 console.log(union);
 
 //교집합
