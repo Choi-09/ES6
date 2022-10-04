@@ -49,23 +49,23 @@
         <!-- main#content + 엔터 -->
         <main>
             <div>
-                <h2>주사위 게임</h2>
+                <h2>🎲주사위 게임🎲</h2>
             </div>
             <section id = "diceSection">
-                <div class = diceImg>
+                <!-- <div class = diceImg>
                     주사위 이미지
-                    <!-- <img src = 주사위\1.png alt="HTML">
+                 <img src = 주사위\1.png alt="HTML">
                     <img src = 주사위\2.png alt="HTML">
                     <img src = 주사위\3.png alt="HTML">
                     <img src = 주사위\4.png alt="HTML">
                     <img src = 주사위\5.png alt="HTML">
-                    <img src = 주사위\6.png alt="HTML"> -->
-                </div>          
+                    <img src = 주사위\6.png alt="HTML"> 
+                </div>     -->      
             </section>
 
             <!-- form에 input이 잘 되었을 때 서버로 날려줌 : (문제없으면)action -->
             <section id = "formSection"> 
-                <form method="post" action = "index.html" name = form1 >
+                <form method="post" action = "index.html" name = form1 id = form1>
                     <legend> 숫자를 선택해 주세요!</legend>
                     <!-- form태그에 name속성은 반드시 줘야 한다. name 속성으로 서버에 전송하기때문! -->
                     <fieldset>
@@ -85,13 +85,12 @@
                 </form>
             </section>
 
-            <section id = "resultSection">
-                결과 o,x
-            </section>
+            <section id = "resultSection"></section>
 
             <section id="buttonSection">
-                <button id="bt1" onclick="show();">시작!</button>
-                <button id="bt2" onclick="showResult();">확인</button>
+                <button id="bt1" onclick="start();">시작!</button>
+                <button id="bt2" onclick="showDice();">주사위 던지기</button>
+                <button id="bt3" onclick="showResult();">확인</button>
                 <!-- <button class="bt1" onclick="funPrint(2);"><span>버튼2</span></button> -->
             </section>
             
