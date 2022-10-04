@@ -11,7 +11,7 @@ let cnt = 0 ;
 
 //폭탄이 섞였는지 체크하는 flag변수
 let shuffleFlag = false;
-
+// d
 
 /* DOM이 로드된 후에 클릭이벤트 연결*/
 document.addEventListener("DOMContentLoaded", ()=>{
