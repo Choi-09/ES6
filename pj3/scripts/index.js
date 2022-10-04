@@ -64,7 +64,7 @@ console.log(selNum, cnt, selNum.length);
     // console.log(n) ;
 
     // 눌러진 번포한 번호를 배열에 추가
-    selNum.push(n);
+    if (!selNum.includes(n)) selNum.push(n);
     // cnt++ ;
 
     console.log(selNum, cnt, selNum.length);
