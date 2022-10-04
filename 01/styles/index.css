@@ -57,7 +57,7 @@ section {
 }
 #diceSection {
     height: 25%;
-    display: none;
+    display: block;
 }
 
 .diceImg{
@@ -74,6 +74,7 @@ section {
 
 #formSection {
     height: 20%;
+    display: block;
 }
 
 /* radio */
@@ -107,11 +108,15 @@ fieldset {
 
 #resultSection {
     height : 10%;
-    display: none; 
+    display: block;
 }
 
 #buttonSection {
     height: 20%; 
+}
+
+#bt2, #bt3 {
+    display: block;
 }
 
 /* button은 인라인태그. 각각 효과를 넣으려면 

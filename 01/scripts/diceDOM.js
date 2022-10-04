@@ -14,10 +14,10 @@ const dispDom = (diceSectionP, formSectionP, resultSectionP, bt1P, bt2P, bt3P) =
     document.getElementById("bt3").style.display = bt3P;
 }
 
-//첫화면
-// const start = () => {
-//     dispDom("none", "block", "none", "none", "block", "none");
-// }
+// 첫화면
+const start = () => {
+    dispDom("none", "block", "none", "none", "block", "none");
+}
 
 //주사위
 const showDice = () => {
@@ -36,7 +36,7 @@ const showResult = () => {
 //DOM 제어
     dispDom("blcok", "none", "blcok", "none", "blcok", "none");
 
-    let tag = `<img src = "./images/${i}.png">`
+    let tag = `<img src = "./images/${randNum}.png">`
 
     let OX;
     if (randNum ==userNum) OX = "O";
@@ -51,5 +51,5 @@ const showResult = () => {
 //DOM이 생성이 되고 난 후에 요소를 CRUD해야한다.
 document.addEventListener("DOMContentLoaded", () => {
     //주사위 버튼만 보여야 함
-    dispDom("none", "none", "block", "none"); 
+    dispDom("block", "none", "block", "none"); 
   }); 
