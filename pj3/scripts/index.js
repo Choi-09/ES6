@@ -52,7 +52,7 @@ selNum.push(n);
 
 console.log(selNum, cnt, selNum.length);
 
-
+// dd
     //폭탄이 있는 배열을 참고하여 그림 변경
     let imgSrc = null; // img 변수안에 초기값 준다
     if (num[n-1]==1) imgSrc = "bom" ; 
